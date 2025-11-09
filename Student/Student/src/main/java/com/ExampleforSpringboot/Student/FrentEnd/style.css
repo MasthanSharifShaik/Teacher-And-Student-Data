@@ -1,0 +1,192 @@
+/* === Global Styles === */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+  margin: 0;
+  padding: 0;
+}
+
+/* === Main Container === */
+.container {
+  width: 90%;
+  max-width: 650px;
+  background: white;
+  margin: 40px auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 20px 30px;
+}
+
+/* === Headings === */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+h2, h3 {
+  color: #1e3a8a;
+  margin-bottom: 8px;
+}
+
+/* === Tab Buttons === */
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-buttons button {
+  border: none;
+  padding: 10px 25px;
+  margin: 0 5px;
+  border-radius: 8px;
+  background: #4a90e2;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.tab-buttons button.active {
+  background: #007aff;
+  transform: scale(1.05);
+}
+
+.tab-buttons button:hover {
+  background: #007aff;
+}
+
+/* === Input Fields & Buttons === */
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 5px 0 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #007aff;
+  transform: scale(1.02);
+}
+
+/* === List Layout === */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+ul li {
+  background: #f0f8ff;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* === Teacher List Formatting === */
+.teacher-block {
+  background: #f8faff;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 12px 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out, background 0.3s;
+}
+
+.teacher-block:hover {
+  transform: scale(1.01);
+  background: #f1f5ff;
+}
+
+.teacher-block p {
+  margin: 4px 0;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.teacher-block p:first-child {
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+.student-line {
+  margin-left: 25px;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* === Student List Formatting === */
+.student-block {
+  background: #f9fcff;
+  border: 1px solid #d4e1ff;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.student-block:hover {
+  background: #f0f7ff;
+  transform: scale(1.01);
+}
+
+.student-block p {
+  margin: 3px 0;
+  font-size: 14.5px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* === Section Headings and Layout === */
+.tab-content h2 {
+  border-left: 5px solid #007aff;
+  padding-left: 8px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* === Scrollbar Styling (optional) === */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a1c4fd;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4a90e2;
+}
+
+/* === Delete Section Buttons === */
+#studentSection h2, #teacherSection h2 {
+  margin-top: 20px;
+}
+
+#studentSection input[type="number"],
+#teacherSection input[type="number"] {
+  margin-bottom: 10px;
+}

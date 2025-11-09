@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student & Teacher Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>📘 Student & Teacher Management System</h1>
+
+    <div class="tab-buttons">
+        <button id="studentTab" class="active" onclick="showTab('student')">🎓 Students</button>
+        <button id="teacherTab" onclick="showTab('teacher')">👨‍🏫 Teachers</button>
+    </div>
+
+    <!-- STUDENT SECTION -->
+    <div id="studentSection" class="tab-content">
+        <h2>Add Student</h2>
+        <input type="text" id="studentName" placeholder="Student Name">
+        <input type="number" id="studentAge" placeholder="Student Age">
+        <button onclick="addStudent()">Add Student</button>
+
+        <h2>Find Student</h2>
+        <input type="number" id="studentId" placeholder="Enter Student ID">
+        <button onclick="getStudent()">Search</button>
+
+        <h2>Delete Student</h2>
+        <input type="number" id="deleteStudentId" placeholder="Enter Student ID to Delete">
+        <button onclick="deleteStudent()">Delete Student</button>
+
+
+        <h2>All Students</h2>
+        <button onclick="getAllStudents()">Refresh List</button>
+        <ul id="studentList"></ul>
+    </div>
+
+    <!-- TEACHER SECTION -->
+    <div id="teacherSection" class="tab-content hidden">
+        <h2>Add Teacher</h2>
+        <input type="text" id="teacherName" placeholder="Teacher Name">
+
+        <h3>Assign Students</h3>
+        <p style="font-size: 14px; color: gray;">Enter student IDs separated by commas (e.g., 1,2,3)</p>
+        <input type="text" id="teacherStudentIds" placeholder="Student IDs">
+
+        <button onclick="addTeacher()">Add Teacher</button>
+
+        <h2>Find Teacher</h2>
+        <input type="number" id="teacherId" placeholder="Enter Teacher ID">
+        <button onclick="getTeacher()">Search</button>
+
+        <h2>Delete Teacher</h2>
+        <input type="number" id="deleteTeacherId" placeholder="Enter Teacher ID to Delete">
+        <button onclick="deleteTeacher()">Delete Teacher</button>
+
+
+        <h2>All Teachers</h2>
+        <button onclick="getAllTeachers()">Refresh List</button>
+        <ul id="teacherList"></ul>
+    </div>
+</div>
+
+<!-- ✅ Correct Placement for Scripts -->
+<script src="script.js"></script>
+</body>
+</html>
